@@ -110,7 +110,7 @@ function ProductComponent() {
         method: "DELETE"
       }).then((res) => {
         let delData = res.data;
-        let reusl = products.filter((data) => data.id !== delData.id);
+        let reusl = products.filter((data) => data.id !== delData.id); // hello
         setProducts(reusl);
       })
       .catch((error) => {
